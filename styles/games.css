@@ -1,0 +1,61 @@
+
+.hangman__box img {   
+    max-width: 270px; 
+}
+
+.hangman__box h1 {
+    font-size: 1.45rem;
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.game__word-display {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.game__word-display .letter {
+    width: 28px;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #000;
+}
+
+.game__word-display .letter.guesses {
+    border-color: transparent;
+    margin: -40px 0 35px;
+}
+
+.game__wrapper h4 {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.game__wrapper h4 b {
+    font-weight: 600;
+}
+
+.game__wrapper .game__guesses-text b {
+    color: var(--color-guesses);
+}
+
+
+@media (max-width: 782px) {
+    .hangman__box img {   
+        max-width: 200px; 
+    }
+
+    .hangman__box h1 {   
+        display: none;
+    }
+}

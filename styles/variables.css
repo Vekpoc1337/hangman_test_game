@@ -1,0 +1,11 @@
+
+:root {
+    --color-background: #5E63BA;
+    --color-background-hover: #8286c9; 
+    --color-white: #fff;
+    --color-guesses: #ff0000;
+
+    --border-radius: 10px;
+    --border-radius-small: 4px;
+    --padding-container: 70px 60px;
+}

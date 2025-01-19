@@ -1,0 +1,48 @@
+.game__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    aspect-ratio: 1;
+    padding: 0 10px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .6);
+    transition: opacity 0.4s ease;
+}
+
+.game__modal.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.game__modal .game__modal-content {
+    background: var(--color-white);
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    border-radius: var(--border-radius);
+    padding: 30px;
+}
+
+.game__modal img {
+    max-width: 130px;
+}
+
+.game__modal h4 {
+    font-size: 1.53rem;
+}
+
+.game__modal p {
+    font-size: 1.15rem;
+    margin: 15px 0 30px;
+    font-weight: 500;
+}
+
+.game__modal p b {
+    color: var(--color-background);
+}

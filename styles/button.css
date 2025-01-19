@@ -1,0 +1,32 @@
+
+.btn {
+    cursor: pointer;
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    background-color: var(--color-background);
+    border-radius: var(--border-radius-small);
+    text-transform: uppercase;
+    padding: 12px 23px;
+}
+
+.btn[disabled] {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.game__wrapper .game__keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 40px;
+    justify-content: center;
+
+}
+
+.game__keyboard .btn {
+    padding: 7px;
+    width: calc(100% / 9 - 5px);
+}
